@@ -38,7 +38,7 @@ class Resultviewmodel:ViewModel() {
 
                 if(response.isSuccessful)
                 {
-                    Log.d("Checkkkkkkkkkkk Body:",response.body().toString())
+                    //Log.d("Checkkkkkkkkkkk Body:",response.body().toString())
                     livedatalist.postValue(response.body())
                 }
                 else
