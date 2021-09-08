@@ -17,7 +17,7 @@ data class results(
                 //val collectionArtistViewUrl:String,
                 //val artistViewUrl:String,
                 //val collectionViewUrl:String,
-                //val previewUrl:String,
+                val previewUrl:String,
                 //val artworkUrl30:String,
                 //val artworkUrl60:String,
                 val artworkUrl100:String,

@@ -19,6 +19,7 @@
         android:layout_marginLeft="5sp"
         android:layout_marginTop="35sp"
         android:singleLine="true"
+        android:paddingLeft="15dp"
         android:background="@drawable/curving"
         android:drawableLeft="@drawable/ic_artist"
 

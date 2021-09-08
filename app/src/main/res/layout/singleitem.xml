@@ -57,6 +57,15 @@
             android:layout_marginTop="200dp"
             android:text="genre" />
 
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_play"
+            android:layout_marginLeft="130sp"
+            android:layout_marginTop="190sp"
+            />
+
 
     </androidx.cardview.widget.CardView>
 

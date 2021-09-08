@@ -39,11 +39,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence, start: Int,
                                        before: Int, count: Int) {
-
-
-
-
-                initviewmodel(s.toString())
             }
         })
     }
