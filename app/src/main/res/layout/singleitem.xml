@@ -10,9 +10,10 @@
         android:layout_height="230sp"
         android:layout_marginLeft="10sp"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#491568"
         android:elevation="25dp"
-
         app:cardCornerRadius="15sp">
+
 
         <ImageView
             android:id="@+id/albumpic"
@@ -27,9 +28,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="95dp"
-            android:singleLine="true"
             android:maxLines="1"
-            android:text="Artist name" />
+            android:singleLine="true"
+            android:text="Artist name"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/trackname"
@@ -37,9 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="125dp"
-            android:singleLine="false"
             android:maxLines="2"
-            android:text="track" />
+            android:singleLine="false"
+            android:text="track"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/price"
@@ -47,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="175dp"
-            android:text="price" />
+            android:text="price"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/genre"
@@ -55,16 +59,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="200dp"
-            android:text="genre" />
+            android:text="genre"
+            android:textColor="@color/white" />
 
         <ImageButton
             android:id="@+id/play"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:src="@drawable/ic_play"
             android:layout_marginLeft="130sp"
             android:layout_marginTop="190sp"
-            />
+            android:src="@drawable/ic_play" />
 
 
     </androidx.cardview.widget.CardView>
