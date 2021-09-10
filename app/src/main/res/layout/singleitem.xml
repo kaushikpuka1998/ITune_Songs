@@ -15,7 +15,7 @@
         app:cardCornerRadius="15sp">
 
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/albumpic"
             android:layout_width="80sp"
             android:layout_height="80sp"

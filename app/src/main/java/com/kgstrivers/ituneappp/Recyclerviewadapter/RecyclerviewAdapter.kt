@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.kgstrivers.ituneappp.DB.RoomDAO
 import com.kgstrivers.ituneappp.Models.Result
 import com.kgstrivers.ituneappp.Models.results
 import com.kgstrivers.ituneappp.R
@@ -26,6 +27,9 @@ class RecyclerviewAdapter: RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder
         var genre = view.genre
         var image = view.albumpic
         var playbutton = view.play
+
+
+
 
 
         fun bind(data: results) {
@@ -59,7 +63,7 @@ class RecyclerviewAdapter: RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder
                 mediaaplayer.setDataSource(data.previewUrl)
                 mediaaplayer.prepare()
             } catch (e: Exception) {
-                Toast.makeText(itemView.context, "Error $e", Toast.LENGTH_LONG).show()
+                //Toast.makeText(itemView.context, "Error $e", Toast.LENGTH_LONG).show()
             }
 
 
@@ -85,5 +89,6 @@ class RecyclerviewAdapter: RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder
 
         this.list = item
     }
+
 
 }
