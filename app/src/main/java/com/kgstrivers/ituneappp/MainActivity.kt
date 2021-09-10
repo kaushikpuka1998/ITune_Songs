@@ -17,9 +17,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.kgstrivers.ituneappp.DB.RoomDB
 import com.kgstrivers.ituneappp.DB.RoomEntity
+import com.kgstrivers.ituneappp.Models.Result
 
 import com.kgstrivers.ituneappp.Models.results
 import com.kgstrivers.ituneappp.Recyclerviewadapter.RecyclerviewAdapter
+import com.kgstrivers.ituneappp.ViewModel.Offlineviewmodel
 import kotlinx.android.synthetic.main.activity_main.*
 import com.kgstrivers.ituneappp.ViewModel.Resultviewmodel
 
@@ -56,10 +58,12 @@ class MainActivity : AppCompatActivity() {
                     {
                         val gl:ArrayList<results> = getvaluefromroom(g)
 
-                        recyclerviewAdapter.listdata(gl)
-                        recyclerviewAdapter.notifyDataSetChanged()
-                        artistnamesearch.setText("")
+                        initresviewmod(gl)
+
                     }
+
+
+                    artistnamesearch.setText("")
                 }
 
 
@@ -151,21 +155,21 @@ class MainActivity : AppCompatActivity() {
                 var rooment = RoomEntity(item.id,item.artistName,item.trackName,item.previewUrl,item.artworkUrl100,item.trackPrice,item.primaryGenreName,item.value)
 
                 //Toast.makeText(applicationContext,rooment.artistName,Toast.LENGTH_SHORT).show()
-                rooment.trackName?.let {
-                    rooment.artistName?.let { it1 ->
-                        rooment.artworkUrl100?.let { it2 ->
-                            item.primaryGenreName?.let { it3 ->
-                                rooment.trackPrice?.let { it4 ->
-                                    results(
-                                        it1,
-                                        it,"", it2, it4.toDouble(), it3
-                                    )
-                                }
+                rooment.artistName?.let { rooment.trackName?.let { it1 ->
+                    rooment.previewUrl?.let { it2 ->
+                        rooment.artworkUrl100?.let { it3 ->
+                            rooment.primaryGenreName?.let { it4 ->
+                                results(it,
+                                    it1, it2, it3,rooment.trackPrice, it4
+                                )
                             }
                         }
                     }
-                }?.let { ret.add(it) }
+                } }
+                    ?.let { ret.add(it) }
             }
+
+
         }
         else
         {
@@ -201,6 +205,36 @@ class MainActivity : AppCompatActivity() {
         }
         return false
     }
+
+    fun initresviewmod(itemsall:List<results>)
+    {
+        val viewmodel = ViewModelProvider(this).get(Offlineviewmodel::class.java)
+
+        viewmodel.getliveDataObserver().observe(this,{
+
+            if(it!=null)
+            {
+
+                recyclerviewAdapter.listdata(it as ArrayList<results>)
+
+                recyclerviewAdapter.notifyDataSetChanged()
+
+                System.out.println("Data Came $it")
+
+            }
+            else{
+                Toast.makeText(this,"Error in getting list", Toast.LENGTH_LONG).show()
+            }
+
+
+        })
+
+        viewmodel.makeAPIcalloffline(itemsall)
+
+
+    }
+
+
 
 
 }

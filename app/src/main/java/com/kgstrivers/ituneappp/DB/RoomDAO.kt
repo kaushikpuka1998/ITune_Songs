@@ -12,7 +12,7 @@ abstract interface RoomDAO {
 
 
 
-    @Query("SELECT * FROM details ORDER BY  value = :filterValues OR artistName =:filterValues DESC")
+    @Query("SELECT * FROM details ORDER BY  value IN (:filterValues) OR artistName IN(:filterValues) DESC")
     fun loadSong(filterValues:String): Array<RoomEntity>?
 
 

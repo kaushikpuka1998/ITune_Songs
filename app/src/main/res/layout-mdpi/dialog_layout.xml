@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200sp"
+    android:layout_height="420sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:elevation="15sp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="180sp"
+            android:layout_height="380sp"
+            android:background="@color/purple_500">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialogimage"
+                android:layout_width="55sp"
+                android:layout_height="55sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="60sp" />
+
+            <TextView
+                android:id="@+id/dialogsongname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="185sp"
+                android:drawableLeft="@drawable/ic_album"
+                android:drawablePadding="15sp"
+                android:maxLines="2"
+                android:text="songname"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/dialogsingername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="215sp"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="15sp"
+                android:maxLines="1"
+                android:text="singer name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dialoggenrename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="245sp"
+                android:drawableLeft="@drawable/ic_headset"
+                android:drawablePadding="15sp"
+                android:maxLines="2"
+                android:text="Genre"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/dexit"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="300dp"
+                android:backgroundTint="@color/black"
+                android:text="Exit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

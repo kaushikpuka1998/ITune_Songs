@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 import com.kgstrivers.ituneappp.Models.Result
+import com.kgstrivers.ituneappp.Models.results
 import com.kgstrivers.ituneappp.Retrofit.RetroInterface
 import com.kgstrivers.ituneappp.Retrofit.RetrofitInstance
 import retrofit2.Call
@@ -65,4 +66,13 @@ class Resultviewmodel:ViewModel() {
 
 
     }
+
+
+    fun makeAPIcalloffline(items: Result)
+    {
+        livedatalist.postValue(items)
+
+
+    }
 }
+

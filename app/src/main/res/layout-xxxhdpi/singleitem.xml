@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="170sp"
+    android:layout_width="200sp"
     android:layout_height="260sp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="150sp"
+        android:layout_width="170sp"
         android:layout_height="230sp"
-        android:layout_marginLeft="10sp"
+        android:layout_marginLeft="15sp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#491568"
         android:elevation="25dp"
@@ -19,7 +19,7 @@
             android:id="@+id/albumpic"
             android:layout_width="80sp"
             android:layout_height="80sp"
-            android:layout_marginLeft="30sp"
+            android:layout_marginLeft="50sp"
             android:layout_marginTop="10sp" />
 
         <TextView
@@ -69,8 +69,8 @@
             android:id="@+id/play"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:layout_marginLeft="100sp"
-            android:layout_marginTop="190sp"
+            android:layout_marginLeft="110sp"
+            android:layout_marginTop="180sp"
             android:src="@drawable/ic_play" />
 
 

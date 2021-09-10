@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="170sp"
-    android:layout_height="260sp"
+    android:layout_width="150sp"
+    android:layout_height="250sp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="150sp"
+        android:layout_width="130sp"
         android:layout_height="230sp"
         android:layout_marginLeft="10sp"
         android:layout_marginTop="10dp"
@@ -17,8 +17,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/albumpic"
-            android:layout_width="80sp"
-            android:layout_height="80sp"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
             android:layout_marginLeft="30sp"
             android:layout_marginTop="10sp" />
 
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="95dp"
+            android:layout_marginTop="75dp"
             android:maxLines="1"
             android:singleLine="true"
             android:text="Artist name"
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="125dp"
+            android:layout_marginTop="115dp"
             android:maxLines="1"
             android:singleLine="false"
             android:text="track"
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="155dp"
+            android:layout_marginTop="145dp"
             android:text="price"
             android:textColor="@color/white"
             android:textSize="12sp" />
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="170dp"
             android:text="genre"
             android:textColor="@color/white" />
 
@@ -69,7 +69,7 @@
             android:id="@+id/play"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:layout_marginLeft="100sp"
+            android:layout_marginLeft="80sp"
             android:layout_marginTop="190sp"
             android:src="@drawable/ic_play" />
 
