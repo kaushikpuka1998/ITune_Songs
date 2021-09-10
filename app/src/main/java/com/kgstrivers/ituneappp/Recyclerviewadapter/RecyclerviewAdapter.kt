@@ -92,7 +92,7 @@ class RecyclerviewAdapter: RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder
                 mediaaplayer.start()
             }else
             {
-                Toast.makeText(view.context,"Song Will Not be Audiable without Internet Connection",Toast.LENGTH_LONG).show()
+                Toast.makeText(view.context,"Song Will Not be Audible without Internet Connection",Toast.LENGTH_LONG).show()
             }
             imgbtn.setImageResource(R.drawable.ic_baseline_motion_photos_paused_24)
 

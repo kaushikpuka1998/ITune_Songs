@@ -14,7 +14,7 @@
         <entry key="app/src/main/res/layout-hdpi/singleitem.xml" value="1.0" />
         <entry key="app/src/main/res/layout-ldpi/singleitem.xml" value="0.3302083333333333" />
         <entry key="app/src/main/res/layout-mdpi/activity_main.xml" value="1.2" />
-        <entry key="app/src/main/res/layout-mdpi/dialog_layout.xml" value="1.0765027322404372" />
+        <entry key="app/src/main/res/layout-mdpi/dialog_layout.xml" value="0.78239608801956" />
         <entry key="app/src/main/res/layout-mdpi/singleitem.xml" value="1.2" />
         <entry key="app/src/main/res/layout-xhdpi/activity_main.xml" value="0.3302083333333333" />
         <entry key="app/src/main/res/layout-xhdpi/dialog_layout.xml" value="0.3302083333333333" />
@@ -28,6 +28,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.3302083333333333" />
         <entry key="app/src/main/res/layout/singleitem.xml" value="0.3302083333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24351851851851852" />
       </map>
     </option>
   </component>
